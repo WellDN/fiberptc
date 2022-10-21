@@ -28,7 +28,7 @@ const PrototypeMaterial = shaderMaterial(
       gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);  
     }
   `,
-  // Fragment Shader
+  // Fragment Shader : it sets the color of each individual fragment of the geometry
   glsl`
     precision mediump float;
     uniform vec3 uColor;
